@@ -1,0 +1,29 @@
+{
+  "name": "5-festivalmusica_inicio",
+  "version": "1.0.0",
+  "description": "Aprendiendo Gulp y Sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Edenml264/Festival_Musica.git"
+  },
+  "keywords": [
+    "SASS",
+    "GULP",
+    "Web",
+    "Design"
+  ],
+  "author": "Eden Mendez Lieras",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Edenml264/Festival_Musica/issues"
+  },
+  "homepage": "https://github.com/Edenml264/Festival_Musica#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  }
+}
