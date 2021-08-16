@@ -1,5 +1,6 @@
 const { series, src, dest, watch } = require('gulp');
 const sass = require('gulp-sass');
+const imagemin = require('gulp-imagemin');
 
 // Función que compila SASS
 
@@ -8,7 +9,7 @@ function css( ) {
         .pipe( sass({
             outputStyle: 'expanded'
         }) )
-        .pipe( dest('./build/css') )
+        .pipe( dest('./build/css'))
 }
 
 function minificarcss( ) {
@@ -16,7 +17,13 @@ function minificarcss( ) {
         .pipe( sass({
             outputStyle: 'compressed'
         }))
-        .pipe( dest('./build/css') )
+        .pipe( dest('./build/css'))
+}
+
+function images(){
+    return src('src/img/**/*')
+        .pipe( imagemin() )
+        .pipe( dest( './build/img' ))
 }
 
 function watchArchivos() {
@@ -25,4 +32,5 @@ function watchArchivos() {
 
 exports.css = css;
 exports.minificarcss = minificarcss;
+exports.images = images;
 exports.watchArchivos = watchArchivos;
