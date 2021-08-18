@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/Edenml264/Festival_Musica#readme",
   "devDependencies": {
-    "gulp": "^4.0.0",
+    "gulp": "^3.9.1",
     "gulp-imagemin": "^8.0.0",
     "gulp-sass": "^5.0.0"
   }
