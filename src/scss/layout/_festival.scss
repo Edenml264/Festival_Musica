@@ -1,8 +1,11 @@
-.sobre-festival {
-    padding: $separacion;
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
 
-    @include tablet {
-        @include grid(2, $separacion);
+.sobre-festival {
+    padding: v.$separacion;
+
+    @include m.tablet {
+        @include m.grid(2, v.$separacion);
     }
 }
 .contenido-festival {
@@ -14,8 +17,8 @@
         font-size: 3rem;
     }
     .fecha{
-        color: $rosa;
-        font-weight: $bold;
+        color: v.$rosa;
+        font-weight: v.$bold;
     }
     .texto{
         line-height: 1.5;

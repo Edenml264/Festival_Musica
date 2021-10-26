@@ -1,3 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap");
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 2rem;
+  color: #000;
+}
+
+.contenedor {
+  max-width: 120rem;
+  width: 95%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -5,7 +56,6 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -338,54 +388,31 @@ template {
   display: none;
 }
 
-html {
-  font-size: 62.5%;
-  box-sizing: border-box;
+.sobre-festival {
+  padding: 5rem;
+}
+@media (min-width: 768px) {
+  .sobre-festival {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+.contenido-festival {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
-body {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.6rem;
-}
-
-p {
-  font-size: 2rem;
-  color: #000;
-}
-
-.contenedor {
-  max-width: 120rem;
-  width: 95%;
-  margin: 0 auto;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-}
-
-h1, h2, h3 {
-  margin: 0;
-}
-
-h1 {
-  font-size: 4rem;
-  font-weight: 900;
-}
-
-h2 {
-  font-size: 3.6rem;
-}
-
-h3 {
+.contenido-festival h2 {
   font-size: 3rem;
+}
+.contenido-festival .fecha {
+  color: #f53756;
+  font-weight: 700;
+}
+.contenido-festival .texto {
+  line-height: 1.5;
 }
 
 .header {
@@ -468,31 +495,4 @@ video {
   background-color: #f53756;
   font-size: 2rem;
   padding: 1rem 2rem;
-}
-
-.sobre-festival {
-  padding: 5rem;
-}
-@media (min-width: 768px) {
-  .sobre-festival {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5rem;
-  }
-}
-
-.contenido-festival {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.contenido-festival h2 {
-  font-size: 3rem;
-}
-.contenido-festival .fecha {
-  color: #f53756;
-  font-weight: 700;
-}
-.contenido-festival .texto {
-  line-height: 1.5;
 }

@@ -1,3 +1,5 @@
+@use 'variables' as v;
+
 html {
     font-size: 62.5%;
     box-sizing: border-box;
@@ -8,12 +10,13 @@ html {
 }
 
 body {
-    font-family: $fuentePrincipal;
+    font-family: v.$fuentePrincipal;
     font-size: 1.6rem;
 }
+
 p {
     font-size: 2rem;
-    color: $negro;
+    color: v.$negro;
 }
 .contenedor {
     max-width: 120rem;
@@ -32,7 +35,7 @@ h1, h2, h3 {
 
 h1 {
     font-size: 4rem;
-    font-weight: $black;
+    font-weight: v.$black;
 }
 h2 {
     font-size: 3.6rem;
